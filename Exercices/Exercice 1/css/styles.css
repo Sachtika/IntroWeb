@@ -1,3 +1,9 @@
 body{
     background: center no-repeat url("../images/gta 2 fond.jpg");
 }
+#gta1{
+    border-style: solid;
+}
+.titre{
+    color:red;
+}
