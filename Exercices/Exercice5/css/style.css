@@ -15,7 +15,7 @@ nav
 	border : 1px solid blue ;
 	vertical-align: top;
 	position: relative;
-	right: 100px;
+	left: 75px;
 }
 section
 {
@@ -23,9 +23,9 @@ section
 
 	text-align: center;
 	border : 1px solid blue ;
-	width: 75%;
+	width: 50%;
 	position: relative;
-	right: 50px;
+	left: 125px;
 }
 
 footer
