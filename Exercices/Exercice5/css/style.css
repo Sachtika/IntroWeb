@@ -1,6 +1,6 @@
 ﻿main{
 	margin:0 auto; /* permet de centrer la page*/
-	width: 55%;  
+	width: 60%;
 }
 
 header{
@@ -15,7 +15,7 @@ nav
 	border : 1px solid blue ;
 	vertical-align: top;
 	position: relative;
-	left: 75px;
+	left: 115px;
 }
 section
 {
@@ -23,9 +23,9 @@ section
 
 	text-align: center;
 	border : 1px solid blue ;
-	width: 50%;
+	width: 47%;
 	position: relative;
-	left: 125px;
+	left: 170px;
 }
 
 footer
