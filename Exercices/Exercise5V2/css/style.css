@@ -22,10 +22,9 @@ section
 	margin-left: 15px;
 	vertical-align: top;
 	display: inline-block;
-
 	text-align: center;
 	border : 1px solid blue ;
-	width: 33%;
+	width: 30%;
 	position: relative;
 	left: 125px;
 }
