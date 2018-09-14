@@ -12,6 +12,7 @@ h1{
     border: 2px solid darkblue;
     padding-left: 10px;
     float: left;
+
 }
 .box2 {
     border: 2px solid red;
@@ -19,11 +20,11 @@ h1{
     width: 732px
 }
 .txt{
-    clear: both;
+    clear: left;
 }
 
 .txt2{
-    clear: both;
+    clear: left;
 }
 
 img{
