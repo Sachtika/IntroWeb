@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>FORMULAIRE</title>
+	<meta  charset="UTF-8">
+	<meta name="title" content="Titre de la page">
+	<meta name="description" content="description de la page">
+	<meta name="author" content="prenon NOM">
+	<meta name="keywords" content="mots-clé1, mots-clé2, ...">
+	<meta name="robots" content="index,follow">
+	<link rel="stylesheet " href ="CSS/Style.css"/>
+</head>
+<body>
+	<div class="form-style">
+		<div class="Entete">Entrez les informations du membre</div>
+			<form>
+				<p>
+					<label> Nom<span style="color:red">*</span> </label>
+						<input  type="text" name="txtNom" placeholder="Nom" required>
+				</p>
+				<p>
+					<label> Prénom<span style="color:red">*</span> </label>
+						<input type="text" name="txtPrenom" placeholder="Prénom" required>
+				</p>
+				<p>
+					<label> Adresse </label>
+						<input class="input1" type="text" name="txtAdd" placeholder="999 rue">
+				</p>
+				<p>
+					<label > Ville </label>
+						<input type="text" name="txtVille">
+				</p>
+				<p>
+					<label> Téléphone<span style="color:red">*</span> </label>
+						<input type="text" name="txtTel" placeholder="999 999-9999" required>
+				</p>
+				<p>
+					<label> Date d'inscription* </label>
+						<input type="text" name="txtDatei" placeholder="jj/mm/aaaa" required>
+				</p>
+				<p>
+					<label> Date de fin </label>
+						<input type="date" name="txtDatef" >
+				</p>
+				<p>
+					<label class="sexe"> Sexe </label>
+						<input id="m" type="radio" name="sexeGenre" value="Masculin"/>
+						<label for="m"> Masculin </label>
+						<input id="f" type="radio" name="sexeGenre" value="Feminin"/>
+						<label for="f" > Feminin </label>
+				</p>
+				<p>
+					<label> Choix </label>
+					<select id="livraison">
+						<option value="American Express">American Express</option>
+						<option value="FedEx">FedEx</option>
+						<option value="USPS">USPS</option>
+					</select>
+				</p>
+				<p>
+					<label> Carte de crédit<span style="color:red">*</span></label>
+						<input type="text" placeholder="XXXX XXXX XXXX XXXX" required>
+				</p>
+				<p>
+					<label>Mot de passe<span style="color:red">*</span></label>
+						<input type="password" name="txtMotPasse">
+				</p>
+				<p>
+					<label>Courriel</label>
+						<input type="text" placeholder="aaaaaa@aaaa.aaa">
+				</p>
+
+				<button>Envoyer</button>
+
+
+
+
+
+
+			</form>
+	</div>
+</body>
+</html>
