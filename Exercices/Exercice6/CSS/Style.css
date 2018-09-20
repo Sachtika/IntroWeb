@@ -13,11 +13,20 @@
 }
 input
 {
-
-width:
-
+    width: 40%
 }
-
+.inputPetit
+{
+    width: 28%;
+}
+.sexe
+{
+    width: 0%;
+}
+.sexe2
+{
+    width: 10%;
+}
 label
 {
     display:inline-block;
@@ -26,11 +35,16 @@ label
 
 .sexe
 {
-    display: block;
+    display: inline-block;
+    width: 5%;
+}
+#livraison
+{
     width: 30%;
 }
-
-button
+.button
 {
     display: inline-block;
+    width: 20%;
 }
+

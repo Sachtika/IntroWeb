@@ -32,22 +32,22 @@
 				</p>
 				<p>
 					<label> Téléphone<span style="color:red">*</span> </label>
-						<input type="text" name="txtTel" placeholder="999 999-9999" required>
+						<input class=inputPetit type="text" name="txtTel" placeholder="999 999-9999" required>
 				</p>
 				<p>
 					<label> Date d'inscription* </label>
-						<input type="text" name="txtDatei" placeholder="jj/mm/aaaa" required>
+						<input class=inputPetit type="text" name="txtDatei" placeholder="jj/mm/aaaa" required>
 				</p>
 				<p>
 					<label> Date de fin </label>
-						<input type="date" name="txtDatef" >
+						<input class=inputPetit type="date" name="txtDatef" >
 				</p>
 				<p>
-					<label class="sexe"> Sexe </label>
-						<input id="m" type="radio" name="sexeGenre" value="Masculin"/>
-						<label for="m"> Masculin </label>
-						<input id="f" type="radio" name="sexeGenre" value="Feminin"/>
-						<label for="f" > Feminin </label>
+					<label "> Sexe </label>
+						<input class="sexe" id="m" type="radio" name="sexeGenre" value="Masculin"/>
+						<label class="sexe2" for="m"> Masculin </label>
+						<input class="sexe" id="f" type="radio" name="sexeGenre" value="Feminin"/>
+						<label class="sexe2" for="f" > Feminin </label>
 				</p>
 				<p>
 					<label> Choix </label>
@@ -59,7 +59,7 @@
 				</p>
 				<p>
 					<label> Carte de crédit<span style="color:red">*</span></label>
-						<input type="text" placeholder="XXXX XXXX XXXX XXXX" required>
+						<input class=inputPetit type="text" placeholder="XXXX XXXX XXXX XXXX" required>
 				</p>
 				<p>
 					<label>Mot de passe<span style="color:red">*</span></label>
@@ -70,12 +70,8 @@
 						<input type="text" placeholder="aaaaaa@aaaa.aaa">
 				</p>
 
-				<button>Envoyer</button>
-
-
-
-
-
+				<input class="button" type="submit">
+				<input class="button" type="reset">
 
 			</form>
 	</div>
