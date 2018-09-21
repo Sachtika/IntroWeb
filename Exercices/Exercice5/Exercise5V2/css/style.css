@@ -1,0 +1,41 @@
+﻿main{
+	margin:0 auto; /* permet de centrer la page*/
+	width: 60%;
+}
+
+header{
+	text-align: center;
+
+}
+h1,h2
+{
+	margin-top: 0px;
+
+}
+nav
+{
+	display: inline-block;
+	width : 150px ;
+	border : 1px solid blue ;
+	vertical-align: top;
+	position: relative;
+	left: 90px;
+}
+section
+{
+	margin-left: 15px;
+	vertical-align: top;
+	display: inline-block;
+	text-align: center;
+	border : 1px solid blue ;
+	width: 30%;
+	position: relative;
+	left: 125px;
+}
+
+footer
+{
+	text-align: center;
+}
+
+
