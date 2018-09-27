@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<title>laboratoire</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="laboratoire Institut des sciences de la mer de Rimousky">
+	<meta name="author" content="Lucie Fortin">
+	<meta name="keywords" content="baleine, maritime, mer">
+	<meta name="robots" content="index,follow">
+	<link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+	<!--Main-->
+	<main>
+		<!--header-->
+		<header>
+		<!--nav_mu-->
+		<div id="bloc_logo">
+			<img src="img/logo.png" width="256" height="56" alt="logo de institut"></div>
+		<div id="nav_mu">
+			<ul><li><a href="#" target="_blank">| Jeux</a></li><li><a href="#" target="_blank">| Sondage</a></li><li><a href="#" target="_blank">| Nous joindre</a></li></ul>
+		</div>
+		<!--Fin nav_mu-->
+		</header>
+		<!--fin Header-->
+		
+		<!--container-->
+		<container>
+		<!--aside-->
+		<aside>
+			<img class="img_aside_float" src="img/aside.jpg" height="222" width="211" alt="poisson dans le aside">
+			<img class="img_aside_float" src="img/pour_nous_joindre.png" height="261" width="45" alt="indication pour nous joindre dans le aside">	
+		</aside>
+		<!--fin aside-->
+		<!--section-->
+		<section>
+			<!--Nav-->
+			<nav>
+			<ul><li><a href="index.html" target="_blank">Accueil</a></li><li><a href="#" target="_blank">| Formation</a></li><li><a href="pageFormulaire.html" target="_blank">| Membres</a></li><li><a href="#" target="_blank">| Services</a></li></ul>
+			</nav>
+			<!--fin Nav-->
+			<h1>Entrez les informations du membre</h1>
+			<form method="post" action="">
+
+					<label> Nom<span style="color:red">*</span> </label>
+					<input type="text" name="txtNom" placeholder="Nom" required>
+
+					<label> Prénom<span style="color:red">*</span> </label>
+					<input type="text" name="txtPrenom" placeholder="Prenom" required>
+					<label >Adresse Courriel</label>
+					<input class="input1" type="text" name="txtAdd" placeholder="xxxxx@gmail.com">
+
+					<label>Téléphone<span style="color:red">*</span></label>
+					<input id="tel" type="text" name="txtTel" placeholder="(418) xxx-xxxx" required>
+
+					<label>Commentaires</label>
+					<textarea id="comment" type="text" name="txtCom" placeholder="Ecrivez vos commentaires" rows="5"></textarea>
+
+					<label>Catégorie</label>
+					<select id="categorie">
+						<option value="étudiant">Étudiant</option>
+						<option value="professeur">Professeur</option>
+					</select>
+
+				<div id="button">
+					<input class="button2" type="submit" value="Envoyer">
+					<input class="button2" type="reset" value="Réinitialiser">
+				</div>
+			</form>
+
+				<!--ligne de séparation-->
+			<hr>
+
+		</section>
+		<!--fin section-->
+		</container>
+		<!--fin container-->
+		<!--footer-->
+		<footer>
+			<ul><li><a href="index.html" target="_blank">Accueil</a></li><li><a href="#" target="_blank">| Formation</a></li><li><a href="#" target="_blank">| Membres</a></li><li><a href="#" target="_blank">| Services</a></li></ul>
+
+			<p>&copy 2018 <b>Institut des sciences de la mer de Rimouski.</b> Tous droits réservés.</p>
+			<p>Ce site est optimisé pour 1200x1080px</p>
+		</br>
+		</footer>
+		<!--fin footer-->
+	</main>
+	<!--fin Main-->
+</body>
+</html>
