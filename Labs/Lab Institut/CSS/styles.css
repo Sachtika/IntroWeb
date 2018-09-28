@@ -159,6 +159,13 @@ hr {
 	border:1px solid #16676a;
 	margin-bottom:25px;
 }
+table{
+	border: solid;
+	border-collapse: collapse;
+}
+td{
+	border: solid;
+}
 /*footer*/
 footer {
 	background:white;
