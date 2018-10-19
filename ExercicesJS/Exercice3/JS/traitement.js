@@ -2,8 +2,8 @@ function btnCalculer_onclick()
 {
     var Argent_Can, TauxChangeEuro, Euro;
 
-    Argent_Can = parseFloat(document.getElementById("txtMot").value);
-    TauxChangeEuro = parseFloat(document.getElementById("txtMot2").value);
+    Argent_Can = parseFloat(document.getElementById("txtArg").value);
+    TauxChangeEuro = parseFloat(document.getElementById("txtTaux").value);
 
     Euro=Argent_Can*TauxChangeEuro;
 
