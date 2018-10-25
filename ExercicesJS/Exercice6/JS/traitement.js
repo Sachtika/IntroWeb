@@ -1,6 +1,6 @@
 function btnCalculer_onclick()
 { 
- 	var _1c,_5c, _10c, _25c, Total
+ 	var _1c,_5c, _10c, _25c, Total;
 
 
     _1c=parseFloat(document.getElementById("txt1").value);
