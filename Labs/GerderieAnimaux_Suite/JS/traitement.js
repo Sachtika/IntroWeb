@@ -1,10 +1,21 @@
+function btnAfficherImg_onclick()
+{
+    if (document.getElementById("radChien").checked == true)
+    {
+        document.getElementById("imageAnimaux").src="img/chien.jpg";
+    }
+    else
+    {
+        document.getElementById("imageAnimaux").src="img/chat.jpg";
+    }
+}
+
 function btnCalculer_onclick()
-{ 
- var NbJrs, Tarif, Montant, MontantTaxes, Vet, Srv, SrvToil, Animal, Rabais, HeuresTravail;
+{
+    var NbJrs, Tarif, Montant, MontantTaxes, Vet, Srv, SrvToil, Animal, Rabais, Taux, PrixVet;
 
  Vet=document.getElementById("lstVeterinaire").value;
  NbJrs=parseFloat(document.getElementById("txtNbreJours").value);
- HeuresTravail=parseFloat(document.getElementById("txtHeuresTravail").value);
 
     if(NbJrs<=5)
     {
@@ -47,34 +58,31 @@ function btnCalculer_onclick()
         Tarif=16.95;
     }
 
-    switch(HeuresTravail)
+    switch(Vet)
     {
-        case 25:
-
+        case "Audrey Bouchard":
+            Taux=25;
             break;
 
-        case 35:
-
+        case "Stéphane Tremblay":
+            Taux=35;
             break;
 
-        case 40:
-
+        case "Maxime Simard":
+            Taux=40;
             break;
 
-        case 45:
-
+        case "Mélissa Caron":
+            Taux=45;
             break;
     }
 
-
-
-
-
+    PrixVet=Taux*2;
 
     //Calcul montant
     Montant=(NbJrs*Tarif)+SrvToil;
     Montant=Montant-(Montant/100)*Rabais;
-    MontantTaxes=(Montant/100)*14.975+Montant;
+    MontantTaxes=(Montant/100)*14.975+Montant+PrixVet;
 
     document.getElementById("lblMessage").innerHTML="Vétérinaire responsable est " + Vet + ". Le montant pour la garde de votre " + Animal + " est de $" + MontantTaxes + " pour " + NbJrs + " jours, " + Srv + " service de toilettage.";
 
