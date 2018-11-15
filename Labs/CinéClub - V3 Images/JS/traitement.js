@@ -1,22 +1,11 @@
 function btnAfficherImg_onchange()
 {
-    if (document.getElementById("auPoste").onchange == true)
-    {
-        document.getElementById("imageFilm").src="img/poste.jpg";
-    }
+    var film;
 
-    else if (document.getElementById("colette").onchange == true)
-    {
-        document.getElementById("imageFilm").src="img/colette.jpg";
-    }
-    else if (document.getElementById("halloween").onchange == true)
-    {
-        document.getElementById("imageFilm").src="img/Halloween.jpg";
-    }
-    else if (document.getElementById("laReligieuse").onchange == true)
-    {
-        document.getElementById("imageFilm").src="img/religieuse.jpg"
-    }
+    film=document.getElementById("lstOptions").value;
+
+        document.getElementById("imageFilm").src="img/" + film + ".jpg"
+
 }
 
 
