@@ -1,6 +1,6 @@
 function btnCalculer_onclick()
 { 
- var NbJrs, Tarif, Montant, MontantTaxes, Vet, Srv, SrvToil, Animal
+ var NbJrs, Tarif, Montant, MontantTaxes, Vet, Srv, SrvToil, Animal;
 
  Vet=document.getElementById("lstVeterinaire").value;
  NbJrs=parseFloat(document.getElementById("txtNbreJours").value);
