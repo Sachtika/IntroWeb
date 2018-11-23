@@ -1,3 +1,11 @@
+function btnCalculer_onclick()
+{
+    if(valideChampObligatoire() === true)
+    {
+        traiteInfos();
+    }
+}
+
 function btnAfficherImg_onclick()
 {
     if (document.getElementById("radChien").checked == true)
@@ -10,12 +18,14 @@ function btnAfficherImg_onclick()
     }
 }
 
-function btnCalculer_onclick()
+
+
+function traiteInfos()
 {
     var NbJrs, Tarif, Montant, MontantTaxes, Vet, Srv, SrvToil, Animal, Rabais, Taux, PrixVet;
 
- Vet=document.getElementById("lstVeterinaire").value;
- NbJrs=parseFloat(document.getElementById("txtNbreJours").value);
+    Vet=document.getElementById("lstVeterinaire").value;
+    NbJrs=parseFloat(document.getElementById("txtNbreJours").value);
 
     if(NbJrs<=5)
     {
@@ -86,5 +96,38 @@ function btnCalculer_onclick()
 
     document.getElementById("lblMessage").innerHTML="Vétérinaire responsable est " + Vet + ". Le montant pour la garde de votre " + Animal + " est de $" + MontantTaxes + " pour " + NbJrs + " jours, " + Srv + " service de toilettage.";
 
+}
 
+function valideChampObligatoire()
+{
+    var tabNomId = new Array("txtNom", "txtTel", "txtNbreJours"), valide=true, i;
+
+    for(i=0; i<tabNomId.length; i++)
+    {
+
+        if(valideExiste(tabNomId[i])===false)
+        {
+            valide=false;
+        }
+
+    }
+
+    return valide;
+}
+
+function valideExiste(nomId)
+{
+    var valide;
+
+    if(document.getElementById(nomId).value==="")
+    {
+        valide=false;
+        document.getElementById(nomId).style.backgroundColor="red";
+    }
+    else
+    {
+        valide=true;
+        document.getElementById(nomId).style.backgroundColor="white";
+    }
+    return valide;
 }
