@@ -45,7 +45,7 @@
 			<div><label>Prénom<span>*</span></label><input type="text" id="txtPrenom" name="txtPrenom" size="40" maxlength="120" pattern="[a-zA-ZÀ-ú\-\s]*" required></div>
 			<div><label>Adresse<span>*</span></label><input type="text" id="txtAdresse" name="txtAdresse" size="40" maxlength="120" pattern="[a-zA-Z'-àâéèêôùûçÀÂÉÈÔÙÛÇ\s]*" required></div>
 			<div><label>Ville<span>*</span></label><input type="text" id="txtVille" name="txtVille" size="40" maxlength="120" pattern="[a-zA-ZÀ-ú\-\s]*" required></div>
-			<div><label>Code postal</label><input type="text" id="txtCodePostal" name="txtCodePostal" size="15" placeholder="A6A 6A6" maxlength="7" pattern="[a-zA-Z]{1}[0-9]{1}[a-zA-Z]{1}(\-| |){1}[0-9]{1}[a-zA-Z]{1}[0-9]{1}"></div>
+			<div><label>Code postal</label><input type="text" id="txtCodePostal" name="txtCodePostal" size="15" placeholder="A6A 6A6" maxlength="7" pattern="[ABCEGHJKLMNPRSTVXYZ]\d[ABCEGHJKLMNPRSTVWXYZ]( )?\d[ABCEGHJKLMNPRSTVWXYZ]\d"></div>
 			<div><label for="tel">Téléphone<span>*</span></label><input type="tel" id="txtTel" name="txtTel" size="13" class="obligatoire" value="" maxlength="14" placeholder="(999) 999-9999" pattern="\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})" required></div>
 			<div><label>Code permanant</label><input type="text" id="txtCodePerm" name="txtCodePerm" size="12" maxlength="12" placeholder="AAAA99999999" pattern="[A-z]{4}[0-9]{8}"></div>
 			<label for="type">Catégorie</label><select id="lstType" name="type">
